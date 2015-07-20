@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+@using (Html.BeginForm("GetXml", "Home"))
+{
+    @Html.Label("Введіть назву сайту:")
+    <hr />
+    @Html.Editor("link")
+    
+    <input type="submit" value="Згенерувати sitemap">
+}
+
